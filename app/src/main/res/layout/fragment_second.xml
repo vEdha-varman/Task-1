@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.alarmium.SecondFragment"
+    style="?android:attr/buttonBarStyle"
+    >
+
+    <Chronometer
+        android:id="@+id/cron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:countDown="true"
+        android:format="00:00:00"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"/><!--
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/ic_reset"
+            /-->
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pauseCron"
+            android:text="Pause" /><!--
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/ic_pause"
+            /-->
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="playCron"
+            android:text="Play" /><!--
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/ic_play"
+            /-->
+
+        <Button
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Split"/><!--
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/ic_split"
+            /-->
+
+    </LinearLayout>
+
+</RelativeLayout>
